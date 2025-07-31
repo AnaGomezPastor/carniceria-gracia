@@ -1,28 +1,12 @@
-:root{
-    --primary-color: #8B0000;
-    --secondary-color: #7C0000;
-    --background-color: #fcf9f2;
-    --secondary-background-color: #f9fafb;
-    --white: #ffffff;
-    /* hex of class text-gray-700 */
-    --text-gray-700: #374151;
-    /* hex of class text-gray-600 */
-    --text-gray-600: #4b5563;
-
-    /* Montserrat Font */
-    --montserrat-font: 'Montserrat', sans-serif;
-    /* Playfair Display font */
-    --playfair-display-font: 'Playfair Display', serif;
-}
 body {
-    font-family: var(--montserrat-font);
-    background-color: var(--background-color);
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--playfair-display-font);
-}
-
-.bg-color {
-    background-color: var(--secondary-background-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
 }

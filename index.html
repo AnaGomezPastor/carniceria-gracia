@@ -1,164 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carniceria</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-shims.min.css">
-    <!-- Tailwind -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carnicería Gracia</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fonts Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- icons -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-</head>
-
-<body class="bg-white text-gray-900">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body class="font-sans text-gray-800">
     <!-- Navbar -->
-    <header class="bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <!-- Logo -->
-                <!-- <img src="/logo.svg" alt="Carnicería Gracia" class="h-8 w-8" /> -->
-                <i class="fas fa-drumstick-bite text-2xl text-red-800"></i>
-                <span class="text-xl font-bold text-red-800">Carnicería Gracia</span>
-            </div>
-            <nav class="space-x-6 text-sm font-medium text-gray-700">
-                <a href="#inicio" class="hover:text-red-800">Inicio</a>
-                <a href="#productos" class="hover:text-red-800">Productos</a>
-                <a href="#nosotros" class="hover:text-red-800">Nosotros</a>
-                <a href="#contacto" class="hover:text-red-800">Contacto</a>
-            </nav>
+    <header class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+        <div class="flex items-center space-x-2">
+          <img src="/logo.svg" alt="logo" class="h-6" />
+          <span class="text-lg font-semibold text-red-800">Carnicería Gracia</span>
         </div>
+        <nav class="hidden md:flex space-x-6 text-sm">
+          <a href="#" class="hover:text-red-700">Inicio</a>
+          <a href="#productos" class="hover:text-red-700">Productos</a>
+          <a href="#nosotros" class="hover:text-red-700">Nosotros</a>
+          <a href="#contacto" class="hover:text-red-700">Contacto</a>
+        </nav>
+        <button class="md:hidden text-red-800" id="menuBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden px-4 pb-4 md:hidden" id="mobileMenu">
+        <a href="#" class="block py-2">Inicio</a>
+        <a href="#productos" class="block py-2">Productos</a>
+        <a href="#nosotros" class="block py-2">Nosotros</a>
+        <a href="#contacto" class="block py-2">Contacto</a>
+      </div>
     </header>
 
     <!-- Hero -->
-    <section class="bg-red-800 text-white py-16 w-full">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-            <!-- Texto -->
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl font-extrabold leading-tight mb-4">Carnicería Artesanal en el Corazón de Gracia</h1>
-                <p class="mb-6 text-lg">Especialistas en carne ecológica y hamburguesas artesanales desde 1985</p>
-                <div class="flex space-x-4">
-                    <a href="#productos"
-                        class="bg-white text-red-800 font-semibold px-5 py-2 rounded hover:bg-gray-100">Ver
-                        Productos</a>
-                    <a href="#contacto"
-                        class="border border-white text-white font-semibold px-5 py-2 rounded hover:bg-white hover:text-red-800 transition">Contactar</a>
-                </div>
-            </div>
-
-            <!-- Imagen decorativa -->
-            <div class="md:w-1/3">
-                <div class="bg-white rounded-full p-8 flex items-center justify-center">
-                    <!-- meat icon -->
-                    <i class="fas fa-drumstick-bite text-6xl text-red-800"></i>
-                </div>
-            </div>
+    <section class="bg-red-800 text-white py-16 px-4">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">Carnicería Artesanal en el Corazón de Gracia</h1>
+          <p class="mb-6">Especialistas en carne ecológica y hamburguesas artesanales desde 1985</p>
+          <div class="flex gap-4">
+            <a href="#productos" class="bg-white text-red-800 px-4 py-2 rounded hover:bg-gray-100">Ver Productos</a>
+            <a href="#contacto" class="border border-white px-4 py-2 rounded hover:bg-white hover:text-red-800">Contactar</a>
+          </div>
         </div>
-    </section>
-    <!-- Productos detacados -->
-    <section>
-        <h2 class="text-2xl text-center my-8">Productos destacados</h2>
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="/images/product1.jpg" alt="Producto 1" class="w-full h-48 object-cover rounded-t-lg">
-                <h3 class="text-xl font-semibold mt-2">Carne de Res Ecológica</h3>
-                <p class="text-gray-600">Carne fresca y ecológica, ideal para tus asados.</p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="/images/product2.jpg" alt="Producto 2" class="w-full h-48 object-cover rounded-t-lg">
-                <h3 class="text-xl font-semibold mt-2">Hamburguesas Artesanales</h3>
-                <p class="text-gray-600">Hechas a mano con carne de la mejor calidad.</p>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="/images/product3.jpg" alt="Producto 3" class="w-full h-48 object-cover rounded-t-lg">
-                <h3 class="text-xl font-semibold mt-2">Chorizos Caseros</h3>
-                <p class="text-gray-600">Chorizos frescos, perfectos para la parrilla.</p>
-            </div>
+        <div class="flex justify-center">
+          <img src="/img/vaca.png" alt="Ilustración vaca" class="w-48 h-48 rounded-full bg-white p-6" />
         </div>
+      </div>
     </section>
 
-    <!-- Nuestros productos con etiquetas de filtración -->
-    <section id="productos" class="py-16 bg-color ">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
-            <div class="flex justify-center mb-6">
-                <button class="bg-red-800 text-white px-4 py-2 rounded mr-2 hover:bg-red-700">Todos</button>
-                <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded mr-2 hover:bg-gray-300">Carne de Res</button>
-                <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded mr-2 hover:bg-gray-300">Cerdo</button>
-                <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Aves</button>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Producto 1 -->
-                <div class="bg-white rounded-lg shadow-md p-4">
-                    <img src="/images/product1.jpg" alt="Producto 1" class="w-full h-48 object-cover rounded-t-lg">
-                    <h3 class="text-xl font-semibold mt-2">Carne de Res Ecológica</h3>
-                    <p class="text-gray-600">Carne fresca y ecológica, ideal para tus asados.</p>
-                </div>
-                <!-- Producto 2 -->
-                <div class="bg-white rounded-lg shadow-md p-4">
-                    <img src="/images/product2.jpg" alt="Producto 2" class="w-full h-48 object-cover rounded-t-lg">
-                    <h3 class="text-xl font-semibold mt-2">Hamburguesas Artesanales</h3>
-                    <p class="text-gray-600">Hechas a mano con carne de la mejor calidad.</p>
-                </div>
-                <!-- Producto 3 -->
-                <div class="bg-white rounded-lg shadow-md p-4">
-                    <img src="/images/product3.jpg" alt="Producto 3" class="w-full h-48 object-cover rounded-t-lg">
-                    <h3 class="text-xl font-semibold mt-2">Chorizos Caseros</h3>
-                    <p class="text-gray-600">Chorizos frescos, perfectos para la parrilla.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Productos -->
+    <section id="productos" class="bg-gray-50 py-16 px-4">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-center text-2xl font-semibold mb-6">Nuestros Productos</h2>
 
-    <!-- Nuestra historia -->
-    <section class="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 py-12">
-        <!-- Tarjeta de Tradición Familiar -->
-        <div
-            class="bg-red-700 text-white rounded-lg p-12 flex flex-col items-center justify-center text-center w-full max-w-md">
-            <svg class="w-16 h-16 mb-4 opacity-30" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
-            </svg>
-            <h2 class="text-2xl font-bold">Tradición Familiar</h2>
-            <p class="text-lg mt-2">Desde 1985</p>
+        <!-- Filtros -->
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+          <button onclick="filtrar('Todos')" class="px-4 py-1 rounded-full bg-red-800 text-white">Todos</button>
+          <button onclick="filtrar('Ecológico')" class="px-4 py-1 rounded-full border text-red-800">Ecológico</button>
+          <button onclick="filtrar('Hamburguesas')" class="px-4 py-1 rounded-full border text-red-800">Hamburguesas</button>
+          <button onclick="filtrar('Embutidos')" class="px-4 py-1 rounded-full border text-red-800">Embutidos</button>
         </div>
 
-        <!-- Texto de Nuestra Historia -->
-        <div class="max-w-2xl text-gray-800">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Nuestra Historia</h2>
-            <p class="mb-4">
-                Fundada en 1985 por la familia Martínez, nuestra carnicería ha sido un referente en el Barrio de Gracia
-                durante más de tres décadas.
-                Lo que comenzó como un pequeño negocio familiar se ha convertido en un establecimiento reconocido por la
-                calidad de sus productos y el trato cercano con los clientes.
-            </p>
-            <p class="mb-6">
-                En 2010 dimos un paso adelante apostando por la carne ecológica y de proximidad, trabajando directamente
-                con ganaderos locales que comparten nuestra filosofía de respeto por los animales y el medio ambiente.
-            </p>
-            <!-- Lista de valores -->
-            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700">
-                <li class="flex items-center"><span class="text-red-600 mr-2">✔</span> Productos locales</li>
-                <li class="flex items-center"><span class="text-red-600 mr-2">✔</span> Ganadería sostenible</li>
-                <li class="flex items-center"><span class="text-red-600 mr-2">✔</span> Recetas tradicionales</li>
-                <li class="flex items-center"><span class="text-red-600 mr-2">✔</span> Elaboración diaria</li>
-            </ul>
+        <!-- Lista productos -->
+        <div id="productoContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="nosotros" class="py-16 px-4">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div class="bg-red-800 text-white flex items-center justify-center p-10 rounded-md text-center">
+          <div>
+            <p class="text-lg">Tradición Familiar</p>
+            <p class="font-semibold text-xl">Desde 1985</p>
+          </div>
         </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Nuestra Historia</h3>
+          <p class="mb-4">
+            Fundada en 1985 por la familia Martínez, nuestra carnicería ha sido un referente en el Barrio de Gracia durante más de tres décadas. Lo que comenzó como un pequeño negocio familiar se ha convertido en un establecimiento reconocido por la calidad de sus productos y el trato cercano con los clientes.
+          </p>
+          <p class="mb-4">
+            En 2010 dimos un paso adelante apostando por la carne ecológica y de proximidad, trabajando directamente con ganaderos locales que comparten nuestra filosofía de respeto por los animales y el medio ambiente.
+          </p>
+          <ul class="list-disc list-inside text-red-800">
+            <li>Productos locales</li>
+            <li>Ganadería sostenible</li>
+            <li>Recetas tradicionales</li>
+            <li>Elaboración diaria</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Contacto y ubicación -->
+<!-- Contacto y ubicación -->
+<section id="contacto" class="py-16 bg-gray-100 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-center text-2xl font-semibold mb-8">Contacto y Ubicación</h2>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+        <div class="md:w-1/2 p-6">
+          <h3 class="text-xl font-semibold mb-4 text-red-800">Información de Contacto</h3>
+          <p class="mb-2"><strong>Dirección:</strong><br />Calle Puigmartí, 27<br />Barrio de Gracia, 08012 Barcelona</p>
+          <p class="mb-2"><strong>Teléfono:</strong><br />93 123 45 67</p>
+          <p class="mb-2"><strong>Email:</strong><br />info@carniceriagraciabarcelona.com</p>
+          <p class="mb-2"><strong>Horario:</strong><br />Lunes a Viernes: 9:00 - 14:00 y 17:00 - 20:30<br />Sábados: 9:00 - 14:30<br />Domingos: Cerrado</p>
+        </div>
+        <div class="md:w-1/2">
+          <iframe
+            class="w-full h-full min-h-[300px]"
+            src="https://www.google.com/maps?q=Calle+Puigmartí+27,+08012+Barcelona&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="bg-color">
-        
+    <!-- Footer -->
+    <footer class="bg-red-800 text-white text-center py-6">
+      <p>&copy; 2025 Carnicería Gracia. Todos los derechos reservados.</p>
+    </footer>
 
+    <!-- Scripts -->
+    <script>
 
-    </section>
-
-
+    </script>
+  </body>
 </html>

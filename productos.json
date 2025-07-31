@@ -1,0 +1,45 @@
+[
+    {
+      "nombre": "Entrecot Ecológico",
+      "descripcion": "Corte premium de ternera ecológica criada en libertad en los Pirineos catalanes.",
+      "categoria": "Ecológico",
+      "imagen": "/img/entrecot.png",
+      "etiqueta": "Ecológico"
+    },
+    {
+      "nombre": "Hamburguesa de Buey",
+      "descripcion": "Elaborada con carne 100% de buey madurada y especias seleccionadas.",
+      "categoria": "Hamburguesas",
+      "imagen": "/img/buey.png",
+      "etiqueta": "Premium"
+    },
+    {
+      "nombre": "Fuet Artesanal",
+      "descripcion": "Embutido catalán tradicional elaborado con las mejores carnes.",
+      "categoria": "Embutidos",
+      "imagen": "/img/fuet.png",
+      "etiqueta": "Tradicional"
+    },
+    {
+      "nombre": "Pollo Ecológico Entero",
+      "descripcion": "Pollo criado en libertad, alimentado con cereales ecológicos y sin antibióticos.",
+      "categoria": "Ecológico",
+      "imagen": "/img/pollo.png",
+      "etiqueta": "Ecológico"
+    },
+    {
+      "nombre": "Hamburguesa de Cordero",
+      "descripcion": "Con carne de cordero del Pirineo, menta fresca y especias árabes.",
+      "categoria": "Hamburguesas",
+      "imagen": "/img/cordero.png",
+      "etiqueta": "Premium"
+    },
+    {
+      "nombre": "Butifarra Blanca",
+      "descripcion": "Elaborada siguiendo la receta tradicional catalana.",
+      "categoria": "Embutidos",
+      "imagen": "/img/butifarra.png",
+      "etiqueta": "Tradicional"
+    }
+  ]
+  

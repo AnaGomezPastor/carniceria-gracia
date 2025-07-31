@@ -1,49 +1,4 @@
-// script.js
-
-const productos = [
-    {
-        nombre: "Entrecot Ecológico",
-        descripcion: "Corte premium de ternera ecológica criada en libertad en los Pirineos catalanes.",
-        categoria: "Ecológico",
-        imagen: "/img/entrecot.png",
-        etiqueta: "Ecológico"
-    },
-    {
-        nombre: "Hamburguesa de Buey",
-        descripcion: "Elaborada con carne 100% de buey madurada y especias seleccionadas.",
-        categoria: "Hamburguesas",
-        imagen: "/img/buey.png",
-        etiqueta: "Premium"
-    },
-    {
-        nombre: "Fuet Artesanal",
-        descripcion: "Embutido catalán tradicional elaborado con las mejores carnes.",
-        categoria: "Embutidos",
-        imagen: "/img/fuet.png",
-        etiqueta: "Tradicional"
-    },
-    {
-        nombre: "Pollo Ecológico Entero",
-        descripcion: "Pollo criado en libertad, alimentado con cereales ecológicos y sin antibióticos.",
-        categoria: "Ecológico",
-        imagen: "/img/pollo.png",
-        etiqueta: "Ecológico"
-    },
-    {
-        nombre: "Hamburguesa de Cordero",
-        descripcion: "Con carne de cordero del Pirineo, menta fresca y especias árabes.",
-        categoria: "Hamburguesas",
-        imagen: "/img/cordero.png",
-        etiqueta: "Premium"
-    },
-    {
-        nombre: "Butifarra Blanca",
-        descripcion: "Elaborada siguiendo la receta tradicional catalana.",
-        categoria: "Embutidos",
-        imagen: "/img/butifarra.png",
-        etiqueta: "Tradicional"
-    },
-];
+let productos = [];
 
 function mostrarProductos(filtrados) {
     const container = document.getElementById("productoContainer");
@@ -51,17 +6,19 @@ function mostrarProductos(filtrados) {
     container.innerHTML = "";
     filtrados.forEach(p => {
         container.innerHTML += `
-        <div class="bg-white p-4 rounded shadow">
-          <img src="${p.imagen}" alt="${p.nombre}" class="w-full h-32 object-contain mb-4">
-          <h4 class="font-semibold text-lg mb-1">${p.nombre}</h4>
-          <p class="text-sm mb-2">${p.descripcion}</p>
-          <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ${p.etiqueta === 'Ecológico' ? 'text-green-700 bg-green-100' :
-                p.etiqueta === 'Premium' ? 'text-red-700 bg-red-100' :
-                    'text-yellow-800 bg-yellow-100'
+      <div class="bg-white p-4 rounded shadow">
+        <img src="${p.imagen}" alt="${p.nombre}" class="w-full h-32 object-contain mb-4">
+        <h4 class="font-semibold text-lg mb-1">${p.nombre}</h4>
+        <p class="text-sm mb-2">${p.descripcion}</p>
+        <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ${p.etiqueta === 'Ecológico'
+                ? 'text-green-700 bg-green-100'
+                : p.etiqueta === 'Premium'
+                    ? 'text-red-700 bg-red-100'
+                    : 'text-yellow-800 bg-yellow-100'
             }">
-            ${p.etiqueta}
-          </span>
-        </div>`;
+          ${p.etiqueta}
+        </span>
+      </div>`;
     });
 }
 
@@ -72,7 +29,12 @@ function filtrar(categoria) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    mostrarProductos(productos);
+    fetch("productos.json")
+        .then(res => res.json())
+        .then(data => {
+            productos = data;
+            mostrarProductos(productos);
+        });
 
     const menuBtn = document.getElementById("menuBtn");
     const mobileMenu = document.getElementById("mobileMenu");
@@ -81,14 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
             mobileMenu.classList.toggle("hidden");
         });
     }
-});
 
-// Añadir evento de filtrado a los botones
-const botones = document.querySelectorAll(".categoria-btn");
-botones.forEach(btn => {
-  btn.addEventListener("click", () => {
-    botones.forEach(b => b.classList.remove("activa"));
-    btn.classList.add("activa");
-    filtrar(btn.getAttribute("data-filtro"));
-  });
+    const botones = document.querySelectorAll(".categoria-btn");
+    botones.forEach(btn => {
+        btn.addEventListener("click", () => {
+            botones.forEach(b => b.classList.remove("bg-red-800", "text-white"));
+            botones.forEach(b => b.classList.add("hover:bg-red-100", "hover:text-red-800"));
+
+            btn.classList.add("bg-red-800", "text-white");
+            btn.classList.remove("hover:bg-red-100", "hover:text-red-800");
+
+            filtrar(btn.getAttribute("data-filtro"));
+        });
+    });
 });

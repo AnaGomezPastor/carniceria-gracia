@@ -1,0 +1,66 @@
+{
+    "Entrecot Ecológico": [
+      {
+        "titulo": "Entrecot a la plancha con hierbas",
+        "ingredientes": [
+          "1 entrecot ecológico",
+          "Romero y tomillo",
+          "Aceite de oliva",
+          "Sal y pimienta"
+        ],
+        "pasos": [
+          "Calienta la plancha a fuego fuerte.",
+          "Salpimenta el entrecot y úntalo con aceite.",
+          "Cocina 2-3 min por lado.",
+          "Espolvorea hierbas y sirve."
+        ]
+      },
+      {
+        "titulo": "Entrecot al vino tinto",
+        "ingredientes": [
+          "1 entrecot",
+          "½ vaso de vino tinto",
+          "Ajo",
+          "Mantequilla"
+        ],
+        "pasos": [
+          "Dora el entrecot.",
+          "Retira y añade ajo + vino + mantequilla.",
+          "Reduce la salsa y baña la carne."
+        ]
+      }
+    ],
+    "Hamburguesa de Buey": [
+      {
+        "titulo": "Hamburguesa clásica",
+        "ingredientes": [
+          "Hamburguesa de buey",
+          "Pan brioche",
+          "Queso cheddar",
+          "Lechuga y tomate"
+        ],
+        "pasos": [
+          "Marca la carne 3-4 min por lado.",
+          "Monta el pan con vegetales y queso.",
+          "Sirve caliente."
+        ]
+      }
+    ],
+    "Fuet Artesanal": [
+      {
+        "titulo": "Tosta de fuet y brie",
+        "ingredientes": [
+          "Fuet artesanal",
+          "Queso brie",
+          "Pan de pueblo",
+          "Miel"
+        ],
+        "pasos": [
+          "Tuesta el pan.",
+          "Pon láminas de brie y fuet.",
+          "Riega con un hilo de miel."
+        ]
+      }
+    ]
+  }
+  

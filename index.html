@@ -7,7 +7,7 @@
   <title>Carnicería Gracia</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  
 </head>
 
 <body class="font-sans text-gray-800">
@@ -56,19 +56,28 @@
     </div>
   </section>
 
-  <!-- Productos -->
-  <section id="productos" class="bg-gray-50 py-16 px-4">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-center text-2xl font-semibold mb-6">Nuestros Productos</h2>
+<!-- ==================  PRODUCTOS  ===================== -->
+<section id="productos" class="bg-gray-50 py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-center text-2xl font-semibold mb-6">Nuestros Productos</h2>
 
-      <!-- Filtros -->
-      <div id="filtrosContainer" class="flex flex-wrap justify-center gap-3 mb-10"></div>
+    <!-- Filtros dinámicos -->
+    <div id="filtrosContainer" class="flex flex-wrap justify-center gap-3 mb-10"></div>
 
+    <!-- Grid -->
+    <div id="productoContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
 
-      <!-- Lista productos -->
-      <div id="productoContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-    </div>
-  </section>
+<!-- Modal Receta -->
+<div id="modalReceta" class="fixed inset-0 bg-black bg-opacity-40 hidden items-center justify-center z-50">
+  <div class="bg-white max-w-md w-full p-6 rounded-lg shadow-lg relative">
+    <button id="cerrarModal" class="absolute top-3 right-3 text-red-800 text-xl">&times;</button>
+    <h3 id="recetaTitulo" class="text-red-800 text-xl font-semibold mb-3"></h3>
+    <div id="recetaContenido" class="space-y-4 text-sm"></div>
+  </div>
+</div>
+
 
   <!-- Historia -->
   <section id="nosotros" class="py-16 px-4">
@@ -127,10 +136,7 @@
     <p>&copy; 2025 Carnicería Gracia. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Scripts -->
-  <script>
-
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

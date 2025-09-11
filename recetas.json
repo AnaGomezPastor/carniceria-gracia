@@ -1,66 +1,122 @@
 {
-    "Entrecot Ecológico": [
-      {
-        "titulo": "Entrecot a la plancha con hierbas",
-        "ingredientes": [
-          "1 entrecot ecológico",
-          "Romero y tomillo",
-          "Aceite de oliva",
-          "Sal y pimienta"
-        ],
-        "pasos": [
-          "Calienta la plancha a fuego fuerte.",
-          "Salpimenta el entrecot y úntalo con aceite.",
-          "Cocina 2-3 min por lado.",
-          "Espolvorea hierbas y sirve."
-        ]
-      },
-      {
-        "titulo": "Entrecot al vino tinto",
-        "ingredientes": [
-          "1 entrecot",
-          "½ vaso de vino tinto",
-          "Ajo",
-          "Mantequilla"
-        ],
-        "pasos": [
-          "Dora el entrecot.",
-          "Retira y añade ajo + vino + mantequilla.",
-          "Reduce la salsa y baña la carne."
-        ]
-      }
-    ],
-    "Hamburguesa de Buey": [
-      {
-        "titulo": "Hamburguesa clásica",
-        "ingredientes": [
-          "Hamburguesa de buey",
-          "Pan brioche",
-          "Queso cheddar",
-          "Lechuga y tomate"
-        ],
-        "pasos": [
-          "Marca la carne 3-4 min por lado.",
-          "Monta el pan con vegetales y queso.",
-          "Sirve caliente."
-        ]
-      }
-    ],
-    "Fuet Artesanal": [
-      {
-        "titulo": "Tosta de fuet y brie",
-        "ingredientes": [
-          "Fuet artesanal",
-          "Queso brie",
-          "Pan de pueblo",
-          "Miel"
-        ],
-        "pasos": [
-          "Tuesta el pan.",
-          "Pon láminas de brie y fuet.",
-          "Riega con un hilo de miel."
-        ]
-      }
-    ]
-  }
-  
+  "Vedella": [
+    {
+      "titulo": "Estofat de vedella amb verdures",
+      "ingredientes": [
+        "500 g de vedella",
+        "Pastanaga",
+        "Ceba",
+        "Patata",
+        "Tomàquet",
+        "Oli d'oliva",
+        "Sal i pebre"
+      ],
+      "pasos": [
+        "Talla la vedella a trossos i sala.",
+        "Enrosseix la carn amb oli.",
+        "Afegeix la ceba i la pastanaga.",
+        "Incorpora el tomàquet i les patates.",
+        "Cobreix amb aigua i cou a foc lent fins que sigui tendre."
+      ]
+    },
+    {
+      "titulo": "Bistec de vedella a la planxa",
+      "ingredientes": [
+        "1 bistec de vedella",
+        "Sal gruixuda",
+        "Pebre negre",
+        "Oli d'oliva"
+      ],
+      "pasos": [
+        "Escalfa una planxa o paella.",
+        "Unta el bistec amb oli i salpebra.",
+        "Cuina’l 2-3 minuts per cada costat al punt desitjat."
+      ]
+    }
+  ],
+  "Pollastre": [
+    {
+      "titulo": "Pollastre al forn amb llimona",
+      "ingredientes": [
+        "1 pollastre sencer",
+        "2 llimones",
+        "All",
+        "Oli d'oliva",
+        "Sal i pebre"
+      ],
+      "pasos": [
+        "Preescalfa el forn a 180 °C.",
+        "Farceix el pollastre amb llimona tallada i all.",
+        "Unta’l amb oli, sal i pebre.",
+        "Enforna durant 1 hora aproximadament."
+      ]
+    },
+    {
+      "titulo": "Pollastre a la planxa amb herbes",
+      "ingredientes": [
+        "Pits de pollastre",
+        "Romaní i farigola",
+        "Oli d'oliva",
+        "Sal i pebre"
+      ],
+      "pasos": [
+        "Marina els pits amb oli i herbes.",
+        "Escalfa la planxa.",
+        "Cuina el pollastre 3-4 minuts per cada costat."
+      ]
+    }
+  ],
+  "Xai": [
+    {
+      "titulo": "Costelles de xai a la brasa",
+      "ingredientes": [
+        "Costelles de xai",
+        "Sal",
+        "Pebre",
+        "Oli d'oliva"
+      ],
+      "pasos": [
+        "Salpebra les costelles.",
+        "Unta-les amb una mica d’oli.",
+        "Cuina-les a la brasa o planxa fins que quedin daurades."
+      ]
+    }
+  ],
+  "Mandonguilles": [
+    {
+      "titulo": "Mandonguilles amb salsa de tomàquet",
+      "ingredientes": [
+        "Mandonguilles",
+        "Tomàquet triturat",
+        "Ceba",
+        "All",
+        "Oli d'oliva",
+        "Sal i sucre"
+      ],
+      "pasos": [
+        "Fes un sofregit amb ceba i all.",
+        "Afegeix el tomàquet, sal i una mica de sucre.",
+        "Cuina a foc lent 20 minuts.",
+        "Incorpora les mandonguilles i deixa coure 10 minuts més."
+      ]
+    }
+  ],
+  "Hamburguesa de formatge": [
+    {
+      "titulo": "Hamburguesa de formatge clàssica",
+      "ingredientes": [
+        "Hamburguesa de formatge",
+        "Pa d’hamburguesa",
+        "Enciam",
+        "Tomàquet",
+        "Ceba",
+        "Ketchup o maionesa"
+      ],
+      "pasos": [
+        "Cuina l’hamburguesa a la planxa fins al punt desitjat.",
+        "Munta el pa amb enciam, tomàquet i ceba.",
+        "Col·loca l’hamburguesa i afegeix la salsa al gust."
+      ]
+    }
+  ]
+}

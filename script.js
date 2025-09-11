@@ -14,15 +14,15 @@ function mostrarProductos(filtrados) {
         <img src="${p.imagen}" alt="${p.nombre}" class="w-full h-32 object-contain mb-4" />
         <h4 class="font-semibold text-lg mb-1">${p.nombre}</h4>
         <p class="text-sm mb-2">${p.descripcion}</p>
-        <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ${p.etiqueta === 'Ecológico'
+        <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ${p.etiqueta === 'Ecològic'
         ? 'text-green-700 bg-green-100'
-        : p.etiqueta === 'Premium'
+        : p.etiqueta === 'Carns'
           ? 'text-red-700 bg-red-100'
           : 'text-yellow-800 bg-yellow-100'
       }">${p.etiqueta}</span>
 
         <button onclick="abrirReceta('${p.nombre}')" 
-          class="hidden group-hover:flex absolute inset-0 bg-red-800 bg-opacity-70 text-white items-center justify-center rounded">
+          class="bg-red-800 text-white rounded p-1">
           Ver recetas
         </button>
       </div>
@@ -42,7 +42,7 @@ function generarFiltros() {
   const filtrosContainer = document.getElementById("filtrosContainer");
   const categorias = [...new Set(productos.map(p => p.categoria))];
   const todas = ["Todos", ...categorias];
-
+ 
   todas.forEach((cat, i) => {
     const btn = document.createElement("button");
     btn.textContent = cat;
@@ -103,7 +103,7 @@ document.getElementById("cerrarModal").addEventListener("click", () => {
 
 // ============== CARGA GENERAL AL INICIAR LA PÁGINA ================
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { 
   // Productos
   fetch("productos.json")
     .then(res => res.json())

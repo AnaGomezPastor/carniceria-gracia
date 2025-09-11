@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carnicería Gracia</title>
+  <title>Carnisseria Gràcia</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  
 </head>
 
 <body class="font-sans text-gray-800">
@@ -16,13 +15,13 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
       <div class="flex items-center space-x-2">
         <img src="/logo.svg" alt="logo" class="h-6" />
-        <span class="text-lg font-semibold text-red-800">Carnicería Gracia</span>
+        <span class="text-lg font-semibold text-red-800">Carnisseria Gràcia</span>
       </div>
       <nav class="hidden md:flex space-x-6 text-sm">
-        <a href="#" class="hover:text-red-700">Inicio</a>
-        <a href="#productos" class="hover:text-red-700">Productos</a>
-        <a href="#nosotros" class="hover:text-red-700">Nosotros</a>
-        <a href="#contacto" class="hover:text-red-700">Contacto</a>
+        <a href="#" class="hover:text-red-700">Inici</a>
+        <a href="#productos" class="hover:text-red-700">Productes</a>
+        <a href="#nosotros" class="hover:text-red-700">Nosaltres</a>
+        <a href="#contacto" class="hover:text-red-700">Contacte</a>
       </nav>
       <button class="md:hidden text-red-800" id="menuBtn">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,10 +30,10 @@
       </button>
     </div>
     <div class="hidden px-4 pb-4 md:hidden" id="mobileMenu">
-      <a href="#" class="block py-2">Inicio</a>
-      <a href="#productos" class="block py-2">Productos</a>
-      <a href="#nosotros" class="block py-2">Nosotros</a>
-      <a href="#contacto" class="block py-2">Contacto</a>
+      <a href="#" class="block py-2">Inici</a>
+      <a href="#productos" class="block py-2">Productes</a>
+      <a href="#nosotros" class="block py-2">Nosaltres</a>
+      <a href="#contacto" class="block py-2">Contacte</a>
     </div>
   </header>
 
@@ -42,85 +41,84 @@
   <section class="bg-red-800 text-white py-16 px-4">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
       <div>
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">Carnicería Artesanal en el Corazón de Gracia</h1>
-        <p class="mb-6">Especialistas en carne ecológica y hamburguesas artesanales desde 1985</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">Carns Diego</h1>
+        <p class="mb-6">Artesans de la carn al cor de Gràcia des de 1985</p>
         <div class="flex gap-4">
-          <a href="#productos" class="bg-white text-red-800 px-4 py-2 rounded hover:bg-gray-100">Ver Productos</a>
+          <a href="#productos" class="bg-white text-red-800 px-4 py-2 rounded hover:bg-gray-100">Veure Productes</a>
           <a href="#contacto"
             class="border border-white px-4 py-2 rounded hover:bg-white hover:text-red-800">Contactar</a>
         </div>
       </div>
       <div class="flex justify-center">
-        <img src="/img/vaca.png" alt="Ilustración vaca" class="w-48 h-48 rounded-full bg-white p-6" />
+        <img src="/img/vaca.png" alt="Il·lustració vaca" class="w-48 h-48 rounded-full bg-white p-6" />
       </div>
     </div>
   </section>
 
-<!-- ==================  PRODUCTOS  ===================== -->
-<section id="productos" class="bg-gray-50 py-16 px-4">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-center text-2xl font-semibold mb-6">Nuestros Productos</h2>
+  <!-- Productes -->
+  <section id="productos" class="bg-gray-50 py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-center text-2xl font-semibold mb-6">Els nostres productes</h2>
 
-    <!-- Filtros dinámicos -->
-    <div id="filtrosContainer" class="flex flex-wrap justify-center gap-3 mb-10"></div>
+      <!-- Filtres dinàmics -->
+      <div id="filtrosContainer" class="flex flex-wrap justify-center gap-3 mb-10"></div>
 
-    <!-- Grid -->
-    <div id="productoContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      <!-- Grid -->
+      <div id="productoContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Modal Recepta -->
+  <div id="modalReceta" class="fixed inset-0 bg-black bg-opacity-40 hidden items-center justify-center z-50">
+    <div class="bg-white max-w-md w-full p-6 rounded-lg shadow-lg relative">
+      <button id="cerrarModal" class="absolute top-3 right-3 text-red-800 text-xl">&times;</button>
+      <h3 id="recetaTitulo" class="text-red-800 text-xl font-semibold mb-3"></h3>
+      <div id="recetaContenido" class="space-y-4 text-sm"></div>
+    </div>
   </div>
-</section>
 
-<!-- Modal Receta -->
-<div id="modalReceta" class="fixed inset-0 bg-black bg-opacity-40 hidden items-center justify-center z-50">
-  <div class="bg-white max-w-md w-full p-6 rounded-lg shadow-lg relative">
-    <button id="cerrarModal" class="absolute top-3 right-3 text-red-800 text-xl">&times;</button>
-    <h3 id="recetaTitulo" class="text-red-800 text-xl font-semibold mb-3"></h3>
-    <div id="recetaContenido" class="space-y-4 text-sm"></div>
-  </div>
-</div>
-
-
-  <!-- Historia -->
+  <!-- Història -->
   <section id="nosotros" class="py-16 px-4">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
       <div class="bg-red-800 text-white flex items-center justify-center p-10 rounded-md text-center">
         <div>
-          <p class="text-lg">Tradición Familiar</p>
-          <p class="font-semibold text-xl">Desde 1985</p>
+          <p class="text-lg">Tradició Familiar</p>
+          <p class="font-semibold text-xl">Des de 1985</p>
         </div>
       </div>
       <div>
-        <h3 class="text-2xl font-semibold mb-4">Nuestra Historia</h3>
+        <h3 class="text-2xl font-semibold mb-4">La nostra història</h3>
         <p class="mb-4">
-          Fundada en 1985 por la familia Martínez, nuestra carnicería ha sido un referente en el Barrio de Gracia
-          durante más de tres décadas. Lo que comenzó como un pequeño negocio familiar se ha convertido en un
-          establecimiento reconocido por la calidad de sus productos y el trato cercano con los clientes.
+          Fundada el 1985 per la família Martínez, la nostra carnisseria ha estat un referent al Barri de Gràcia
+          durant més de tres dècades. El que va començar com un petit negoci familiar s'ha convertit en un
+          establiment reconegut per la qualitat dels seus productes i el tracte proper amb els clients.
         </p>
         <p class="mb-4">
-          En 2010 dimos un paso adelante apostando por la carne ecológica y de proximidad, trabajando directamente con
-          ganaderos locales que comparten nuestra filosofía de respeto por los animales y el medio ambiente.
+          El 2010 vam fer un pas endavant apostant per la carn ecològica i de proximitat, treballant directament amb
+          ramaders locals que comparteixen la nostra filosofia de respecte pels animals i el medi ambient.
         </p>
         <ul class="list-disc list-inside text-red-800">
-          <li>Productos locales</li>
-          <li>Ganadería sostenible</li>
-          <li>Recetas tradicionales</li>
-          <li>Elaboración diaria</li>
+          <li>Productes locals</li>
+          <li>Ramaderia sostenible</li>
+          <li>Receptes tradicionals</li>
+          <li>Elaboració diària</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Contacto y ubicación -->
+  <!-- Contacte i ubicació -->
   <section id="contacto" class="py-16 bg-gray-100 px-4">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-center text-2xl font-semibold mb-8">Contacto y Ubicación</h2>
+      <h2 class="text-center text-2xl font-semibold mb-8">Contacte i Ubicació</h2>
       <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
         <div class="md:w-1/2 p-6">
-          <h3 class="text-xl font-semibold mb-4 text-red-800">Información de Contacto</h3>
-          <p class="mb-2"><strong>Dirección:</strong><br />Calle Puigmartí, 5<br />Barrio de Gracia, 08012 Barcelona</p>
-          <p class="mb-2"><strong>Teléfono:</strong><br />93 210 00 55</p>
+          <h3 class="text-xl font-semibold mb-4 text-red-800">Informació de contacte</h3>
+          <p class="mb-2"><strong>Adreça:</strong><br />Carrer Puigmartí, 5<br />Barri de Gràcia, 08012 Barcelona</p>
+          <p class="mb-2"><strong>Telèfon:</strong><br />93 210 00 55</p>
           <p class="mb-2"><strong>Email:</strong><br />carnsdgp@gmail.com</p>
-          <p class="mb-2"><strong>Horario:</strong><br />Lunes a Viernes: 9:00 - 14:00 y 17:00 - 20:30<br />Sábados:
-            9:00 - 14:00<br />Domingos: Cerrado</p>
+          <p class="mb-2"><strong>Horari:</strong><br />Dilluns a Divendres: 9:00 - 14:00 i 17:00 - 20:30<br />Dissabtes:
+            9:00 - 14:00<br />Diumenges: Tancat</p>
         </div>
         <div class="md:w-1/2">
           <iframe class="w-full h-full min-h-[300px]"
@@ -133,7 +131,7 @@
 
   <!-- Footer -->
   <footer class="bg-red-800 text-white text-center py-6">
-    <p>&copy; 2025 Carnicería Gracia. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Carnisseria Gràcia. Tots els drets reservats.</p>
   </footer>
 
   <script src="script.js"></script>

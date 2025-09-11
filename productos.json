@@ -1,45 +1,163 @@
 [
-    {
-      "nombre": "Entrecot Ecológico",
-      "descripcion": "Corte premium de ternera ecológica criada en libertad en los Pirineos catalanes.",
-      "categoria": "Ecológico",
-      "imagen": "/img/entrecot.png",
-      "etiqueta": "Ecológico"
-    },
-    {
-      "nombre": "Hamburguesa de Buey",
-      "descripcion": "Elaborada con carne 100% de buey madurada y especias seleccionadas.",
-      "categoria": "Hamburguesas",
-      "imagen": "/img/buey.png",
-      "etiqueta": "Premium"
-    },
-    {
-      "nombre": "Fuet Artesanal",
-      "descripcion": "Embutido catalán tradicional elaborado con las mejores carnes.",
-      "categoria": "Embutidos",
-      "imagen": "/img/fuet.png",
-      "etiqueta": "Tradicional"
-    },
-    {
-      "nombre": "Pollo Ecológico Entero",
-      "descripcion": "Pollo criado en libertad, alimentado con cereales ecológicos y sin antibióticos.",
-      "categoria": "Ecológico",
-      "imagen": "/img/pollo.png",
-      "etiqueta": "Ecológico"
-    },
-    {
-      "nombre": "Hamburguesa de Cordero",
-      "descripcion": "Con carne de cordero del Pirineo, menta fresca y especias árabes.",
-      "categoria": "Hamburguesas",
-      "imagen": "/img/cordero.png",
-      "etiqueta": "Premium"
-    },
-    {
-      "nombre": "Butifarra Blanca",
-      "descripcion": "Elaborada siguiendo la receta tradicional catalana.",
-      "categoria": "Embutidos",
-      "imagen": "/img/butifarra.png",
-      "etiqueta": "Tradicional"
-    }
-  ]
-  
+  {
+    "nombre": "Vedella",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Ecològic",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Ecològic"
+  },
+  {
+    "nombre": "Pollastre",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Ecològic",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Ecològic"
+  },
+  {
+    "nombre": "Xai",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Carns",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Carns"
+  },
+  {
+    "nombre": "Poltre",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Carns",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Carns"
+  },
+  {
+    "nombre": "Pollastre blanc",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Carns",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Carns"
+  },
+  {
+    "nombre": "Vaca",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Carns",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Carns"
+  },
+  {
+    "nombre": "Conill",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Carns",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Carns"
+  },
+  {
+    "nombre": "Cabrit",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Carns",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Carns"
+  },
+  {
+    "nombre": "Vedella arrebossada",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Elaborats",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Elaborats"
+  },
+  {
+    "nombre": "Pit de pollastre arrebossat",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Elaborats",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Elaborats"
+  },
+  {
+    "nombre": "Mandonguilles",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Elaborats",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Elaborats"
+  },
+  {
+    "nombre": "Pinxos de curry",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Elaborats",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Elaborats"
+  },
+  {
+    "nombre": "Pinxos de barbacoa",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Elaborats",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Elaborats"
+  },
+  {
+    "nombre": "Pinxos de teriyaki",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Elaborats",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Elaborats"
+  },
+  {
+    "nombre": "Naturals",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "Formatge",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "Parmesà",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "Roquefort",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "Formatge de cabra",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "Ceba",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "Taronja",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "All i julivert",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  },
+  {
+    "nombre": "Pollastre",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "categoria": "Hamburgueses",
+    "imagen": "/img/default_img.jpg",
+    "etiqueta": "Hamburgueses"
+  }
+]

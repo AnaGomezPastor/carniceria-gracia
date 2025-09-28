@@ -10,22 +10,30 @@ function mostrarProductos(filtrados) {
   filtrados.forEach(p => {
     // Tarjeta de producto con botón oculto
     container.innerHTML += `
-      <div class="relative group bg-white p-4 rounded shadow">
-        <img src="${p.imagen}" alt="${p.nombre}" class="w-full h-32 object-contain mb-4" />
-        <h4 class="font-semibold text-lg mb-1">${p.nombre}</h4>
-        <p class="text-sm mb-2">${p.descripcion}</p>
-        <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ${p.etiqueta === 'Ecològic'
-        ? 'text-green-700 bg-green-100'
-        : p.etiqueta === 'Carns'
-          ? 'text-red-700 bg-red-100'
-          : 'text-yellow-800 bg-yellow-100'
-      }">${p.etiqueta}</span>
-
-        <button onclick="abrirReceta('${p.nombre}')" 
-          class="bg-red-800 text-white rounded p-1">
-          Ver recetas
-        </button>
+    <div class="relative group bg-white p-4 rounded shadow flex flex-row items-start gap-4 lg:flex-col">
+    <!-- Imagen -->
+    <div class="w-1/3 lg:w-full">
+      <img src="${p.imagen}" alt="${p.nombre}" class="w-full h-full object-contain lg:h-32" />
+    </div>
+  
+    <!-- Contenido -->
+    <div class="w-2/3 lg:w-full flex flex-col justify-between">
+      <!-- Nombre + etiqueta -->
+      <div class="flex items-center justify-between mb-1">
+        <h4 class="font-semibold text-lg">${p.nombre}</h4>
+        <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ml-2">${p.etiqueta}</span>
       </div>
+  
+      <p class="text-sm mb-2">${p.descripcion}</p>
+  
+      <button onclick="abrirReceta('${p.nombre}')" class="bg-red-800 text-white rounded p-1 self-start">
+        Ver recetas
+      </button>
+    </div>
+  </div>
+  
+  
+  
     `;
   });
 }
@@ -42,7 +50,7 @@ function generarFiltros() {
   const filtrosContainer = document.getElementById("filtrosContainer");
   const categorias = [...new Set(productos.map(p => p.categoria))];
   const todas = ["Todos", ...categorias];
- 
+
   todas.forEach((cat, i) => {
     const btn = document.createElement("button");
     btn.textContent = cat;
@@ -102,7 +110,7 @@ document.getElementById("cerrarModal").addEventListener("click", () => {
 
 // ============== CARGA GENERAL AL INICIAR LA PÁGINA ================
 
-document.addEventListener("DOMContentLoaded", () => { 
+document.addEventListener("DOMContentLoaded", () => {
   // Productos
   fetch("data/productos.json")
     .then(res => res.json())

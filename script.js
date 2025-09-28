@@ -47,8 +47,7 @@ function generarFiltros() {
     const btn = document.createElement("button");
     btn.textContent = cat;
     btn.setAttribute("data-filtro", cat);
-    btn.className =
-      "categoria-btn px-4 py-1 rounded-full border text-red-800 hover:bg-red-100 hover:text-red-800 transition";
+    btn.className = "categoria-btn px-4 py-1 rounded-full border text-red-800 hover:bg-red-100 hover:text-red-800 transition";
 
     // botón por defecto activo = Todos
     if (i === 0) {
@@ -105,7 +104,7 @@ document.getElementById("cerrarModal").addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", () => { 
   // Productos
-  fetch("productos.json")
+  fetch("data/productos.json")
     .then(res => res.json())
     .then(data => {
       productos = data;
@@ -114,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Recetas
-  fetch("recetas.json")
+  fetch("data/recetas.json")
     .then(r => r.json())
     .then(data => recetas = data);
 

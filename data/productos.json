@@ -63,7 +63,7 @@
       "animal": "Pollastre",
       "parts": [
         {
-          "nom": "Pechuga (o Pit)",
+          "nom": "Pit",
           "part_animal": "Part frontal del tors",
           "receptes": "La carn més magra. Ideal per a filets a la planxa, escalopes arrebossades, farcits, i per fer carn picada o broquetes.",
           "imatge": "/img/default_img.jpg"
@@ -116,13 +116,13 @@
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Mitjana / Llom Alt (Lomo Alto)",
+          "nom": "Mitjana / Llom Alt",
           "part_animal": "Part davantera del llom, desossada o amb os.",
           "receptes": "Carn magra, sucosa i molt saborosa. Amb os es fan els xuletons o costelles, perfectes a la brasa o planxa. Desossada per a entrecots o roast beef.",
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Llom Baix (Lomo Bajo)",
+          "nom": "Llom Baix",
           "part_animal": "Part posterior del llom, amb costelles més curtes.",
           "receptes": "Molt tendre i magra. Ideal per a entrecots (sense os), a la planxa, brasa o fregit.",
           "imatge": "/img/default_img.jpg"
@@ -146,7 +146,7 @@
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Tall Rodó de la Cuixa (Redondo)",
+          "nom": "Tall Rodó",
           "part_animal": "Part exterior de la cuixa, de forma cilíndrica.",
           "receptes": "Carn magra, sense nervis, una mica eixuta. Perfecta per a rostir sencera (tall de rodó), farcir, arrebossar o en llibrets.",
           "imatge": "/img/default_img.jpg"
@@ -164,25 +164,25 @@
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Llata (Llana)",
+          "nom": "Llata",
           "part_animal": "Part de l'espatlla, amb una línia gelatinosa.",
           "receptes": "Carn melosa, molt adequada per a fregir, planxa, guisats, estofats (com el fricandó) i rostits.",
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Jarret / Conill / Morcillo",
+          "nom": "Jarret",
           "part_animal": "Part baixa de les potes (bessó de l'animal).",
           "receptes": "Carn magra, gelatinosa, amb molta fibra i col·lagen. Perfecta per a guisats (per la seva gelatina), brous, escudella i tallada amb os és l'ossobuco.",
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Aguja / Filet de Pobre",
+          "nom": "Filet de Pobre",
           "part_animal": "Part davantera, a continuació del llom alt, sobre l'espatlla.",
           "receptes": "Carn tendra i gustosa. Adequada per a guisar, estofar, fer a la planxa i filets.",
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Espatlla / Espaldilla",
+          "nom": "Espatlla",
           "part_animal": "Part de l'espatlla.",
           "receptes": "Carn grassa i sucosa. S'usa principalment per a estofats, guisats, rostir sencera o picar.",
           "imatge": "/img/default_img.jpg"
@@ -200,25 +200,25 @@
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Cua (Rabo)",
+          "nom": "Cua",
           "part_animal": "Extrem de la columna vertebral.",
           "receptes": "Carn gelatinosa, melosa i molt gustosa. Es destina a guisats melosos (com el típic cua de bou) i per a l'escudella o brous.",
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Coll (Pescuezo)",
+          "nom": "Coll",
           "part_animal": "Part del coll.",
           "receptes": "Carn melosa, gustosa, amb tendrums. S'utilitza per a brous, estofats de cocció lenta i carn picada.",
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Galta (Carrillada)",
+          "nom": "Galta",
           "part_animal": "Músculs de la cara de l'animal.",
           "receptes": "Carn molt melosa i tendra. Ideal per a guisats, rostits i coccions llargues que resulten en carns que es desfan.",
           "imatge": "/img/default_img.jpg"
         },
         {
-          "nom": "Pit (Pecho)",
+          "nom": "Pit",
           "part_animal": "Part davantera del cos.",
           "receptes": "Carn gustosa, grassa i tendinosa. S'usa per a guisats, brous, escudella o arrebossada si es talla molt fina.",
           "imatge": "/img/default_img.jpg"

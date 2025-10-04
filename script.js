@@ -1,5 +1,9 @@
 // ==================== CÀRREGA DE PECES D'ANIMALS =========================
 let peces = [];
+let pecesVisibles = [];
+let mostrantTotes = false;
+const MAX_VISIBLES = 8; // nombre inicial de peces visibles
+let animalActiu = null;
 
 // Mostrar targetes de peces
 function mostrarPeces(filtrades) {
@@ -7,39 +11,53 @@ function mostrarPeces(filtrades) {
   if (!container) return;
   container.innerHTML = "";
 
-  filtrades.forEach(p => {
+  pecesVisibles = mostrantTotes ? filtrades : filtrades.slice(0, MAX_VISIBLES);
+
+  pecesVisibles.forEach(p => {
     container.innerHTML += `
-      <div class="relative group bg-white p-4 rounded shadow flex flex-row items-start gap-4 lg:flex-col">
+      <div class="group bg-white p-4 rounded shadow transition transform hover:scale-[1.02] col-span-1 flex flex-col">
         <!-- Imatge -->
-        <div class="w-1/3 lg:w-full">
-          <img src="${p.imatge}" alt="${p.nom}" class="w-full h-full object-contain lg:h-32" />
+        <div class="h-40 flex items-center justify-center bg-gray-100 rounded mb-2">
+          <img src="${p.imatge}" alt="${p.nom}" class="max-h-full object-contain" />
         </div>
 
         <!-- Contingut -->
-        <div class="w-2/3 lg:w-full flex flex-col justify-between">
-          <!-- Nom + etiqueta -->
+        <div class="flex flex-col justify-between">
           <div class="flex items-center justify-between mb-1">
             <h4 class="font-semibold text-lg">${p.nom}</h4>
             <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ml-2">${p.animal}</span>
           </div>
 
           <p class="text-sm text-gray-600 mb-2">${p.part_animal}</p>
-          <button onclick="obrirDetall('${p.nom}', '${p.receptes.replace(/'/g, '\\\'')}')" class="bg-red-800 text-white rounded p-1 self-start">
-            Veure ús culinari
+          <button onclick="obrirDetall('${p.nom}', '${p.receptes.replace(/'/g, "\\'")}')" class="bg-red-800 text-white rounded px-2 py-1 self-start hover:bg-red-700 transition">
+            Receptes
           </button>
         </div>
       </div>
+
+
     `;
   });
+
+  // Mostrar o amagar botó de toggle
+  const toggleBtn = document.getElementById("toggleBtn");
+  if (filtrades.length > MAX_VISIBLES) {
+    toggleBtn.classList.remove("hidden");
+    toggleBtn.textContent = mostrantTotes ? "Mostrar menys" : "Mostrar més";
+  } else {
+    toggleBtn.classList.add("hidden");
+  }
 }
 
 // Filtrar per animal
 function filtrar(animal) {
+  animalActiu = animal;
+  mostrantTotes = false;
   const filtrades = peces.filter(p => p.animal === animal);
   mostrarPeces(filtrades);
 }
 
-// Generar botons dinàmics de filtres (sense "Tots")
+// Generar botons dinàmics de filtres
 function generarFiltres() {
   const filtrosContainer = document.getElementById("filtrosContainer");
   const categories = [...new Set(peces.map(p => p.animal))];
@@ -54,7 +72,7 @@ function generarFiltres() {
     if (i === 0) {
       btn.classList.add("bg-red-800", "text-white");
       btn.classList.remove("hover:bg-red-100", "hover:text-red-800");
-      filtrar(cat); // Mostrem directament el primer animal
+      filtrar(cat);
     }
 
     btn.addEventListener("click", () => {
@@ -69,6 +87,19 @@ function generarFiltres() {
 
     filtrosContainer.appendChild(btn);
   });
+}
+
+// BOTÓ DE MOSTRAR MÉS / MENYS
+function toggleMostrar() {
+  mostrantTotes = !mostrantTotes;
+  if (!animalActiu) return;
+  const filtrades = peces.filter(p => p.animal === animalActiu);
+  mostrarPeces(filtrades);
+
+  // Scroll suau fins al contenidor després de mostrar menys
+  if (!mostrantTotes) {
+    document.getElementById("productoContainer").scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 // MODAL DE DETALL
@@ -92,11 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data/productos.json")
     .then(res => res.json())
     .then(data => {
-      // Aplanem totes les parts dins d’un únic array
       peces = data.animals.flatMap(a =>
         a.parts.map(p => ({
           ...p,
-          animal: a.animal // afegim el nom de l’animal a cada peça
+          animal: a.animal
         }))
       );
       generarFiltres();
@@ -110,4 +140,11 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileMenu.classList.toggle("hidden");
     });
   }
+
+  // Botó de mostrar més
+  const toggleBtn = document.createElement("button");
+  toggleBtn.id = "toggleBtn";
+  toggleBtn.className = "hidden text-red-800 px-4 py-2 underline mt-6 mx-auto block hover:text-gray-700 transition";
+  document.querySelector("#productos .max-w-7xl").appendChild(toggleBtn);
+  toggleBtn.addEventListener("click", toggleMostrar);
 });

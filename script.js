@@ -17,25 +17,22 @@ function mostrarPeces(filtrades) {
     container.innerHTML += `
       <div class="group bg-white p-4 rounded shadow transition transform hover:scale-[1.02] col-span-1 flex flex-col">
         <!-- Imatge -->
-        <div class="h-40 flex items-center justify-center bg-gray-100 rounded mb-2">
-          <img src="${p.imatge}" alt="${p.nom}" class="max-h-full object-contain" />
+        <div class="flex items-center justify-center bg-gray-100 rounded mb-2">
+          <img src="${p.imatge}" alt="${p.nom}" class="max-h-full object-contain bg-gray-800" />
         </div>
 
         <!-- Contingut -->
         <div class="flex flex-col justify-between">
           <div class="flex items-center justify-between mb-1">
             <h4 class="font-semibold text-lg">${p.nom}</h4>
-            <span class="inline-block text-xs px-2 py-1 rounded bg-gray-100 ml-2">${p.animal}</span>
           </div>
 
-          <p class="text-sm text-gray-600 mb-2">${p.part_animal}</p>
-          <button onclick="obrirDetall('${p.nom}', '${p.receptes.replace(/'/g, "\\'")}')" class="bg-red-800 text-white rounded px-2 py-1 self-start hover:bg-red-700 transition">
-            Receptes
+          <p class="text-sm text-gray-600 mb-2">${p.descripcio}</p>
+          <button onclick="obrirDetall('${p.nom}', '${p.receptes.replace(/'/g, "\\'")}')" class="underline text-red-800 self-start hover:text-gray-700 transition">
+            Ús culinari
           </button>
         </div>
       </div>
-
-
     `;
   });
 
@@ -49,18 +46,18 @@ function mostrarPeces(filtrades) {
   }
 }
 
-// Filtrar per animal
-function filtrar(animal) {
-  animalActiu = animal;
+// Filtrar per producte
+function filtrar(producte) {
+  producteActiu = producte;
   mostrantTotes = false;
-  const filtrades = peces.filter(p => p.animal === animal);
+  const filtrades = peces.filter(p => p.producte === producte);
   mostrarPeces(filtrades);
 }
 
 // Generar botons dinàmics de filtres
 function generarFiltres() {
   const filtrosContainer = document.getElementById("filtrosContainer");
-  const categories = [...new Set(peces.map(p => p.animal))];
+  const categories = [...new Set(peces.map(p => p.producte))];
 
   categories.forEach((cat, i) => {
     const btn = document.createElement("button");
@@ -92,8 +89,8 @@ function generarFiltres() {
 // BOTÓ DE MOSTRAR MÉS / MENYS
 function toggleMostrar() {
   mostrantTotes = !mostrantTotes;
-  if (!animalActiu) return;
-  const filtrades = peces.filter(p => p.animal === animalActiu);
+  if (!producteActiu) return;
+  const filtrades = peces.filter(p => p.producte === producteActiu);
   mostrarPeces(filtrades);
 
   // Scroll suau fins al contenidor després de mostrar menys
@@ -123,10 +120,10 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data/productos.json")
     .then(res => res.json())
     .then(data => {
-      peces = data.animals.flatMap(a =>
-        a.parts.map(p => ({
+      peces = data.productes.flatMap(a =>
+        a.informacio.map(p => ({
           ...p,
-          animal: a.animal
+          producte: a.producte
         }))
       );
       generarFiltres();

@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-800 pt-10">
   <!-- Navbar -->
-  <header class="bg-white shadow-md">
+  <header class="bg-white shadow-md w-full fixed top-0 left-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
       <div class="flex items-center space-x-2">
-        <img src="/logo.svg" alt="logo" class="h-6" />
+        <img src="img/chicken-svg.svg" alt="logo" class="h-6 " />
         <span class="text-lg font-semibold text-red-800">Carnisseria Gràcia</span>
       </div>
       <nav class="hidden md:flex space-x-6 text-sm">
@@ -38,48 +38,31 @@
   </header>
 
   <!-- Hero -->
-  <section class="bg-red-800 text-white py-16 px-4">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
-      <div class="">
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">Carns Diego</h1>
-        <p class="mb-6">Artesans de la carn al cor de Gràcia des de 1985</p>
-        <div class="flex gap-4">
-          <a href="#productos" class="bg-white text-red-800 px-4 py-2 rounded hover:bg-gray-100">Veure Productes</a>
+  <section class="bg-red-800 text-white py-16 px-6">
+    <div
+      class="max-w-7xl mx-auto flex flex-col items-center text-center md:grid md:grid-cols-2 md:text-left md:items-center md:gap-12">
+
+      <!-- Texto -->
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Carns Diego</h1>
+        <p class="text-lg text-red-100">Artesans de la carn al cor de Gràcia des de 1985</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#productos"
+            class="bg-white text-red-800 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">Veure
+            Productes</a>
           <a href="#contacto"
-            class="border border-white px-4 py-2 rounded hover:bg-white hover:text-red-800">Contactar</a>
+            class="border border-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-red-800 transition">Contactar</a>
         </div>
       </div>
-      <div class="flex justify-center">
-        <img src="/img/vaca.png" alt="Il·lustració vaca" class="w-48 h-48 rounded-full bg-white p-6" />
+
+      <!-- Imagen -->
+      <div class="mt-12 md:mt-0 flex justify-center md:justify-end">
+        <img src="/img/default_img.jpg" alt="Il·lustració vaca"
+          class="w-56 h-56 md:w-72 md:h-72 rounded-full bg-white p-6 shadow-lg" />
       </div>
     </div>
   </section>
 
-  <!-- Productes -->
-  <section id="productos" class="bg-gray-50 py-16 px-4">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-center text-2xl font-semibold mb-6">Els nostres productes</h2>
-  
-      <!-- Filtres dinàmics -->
-      <div id="filtrosContainer" class="flex flex-wrap justify-center gap-3 mb-10"></div>
-  
-      <!-- Mostrar productes -->
-      <div id="productoContainer" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-
-        <!-- Productes carregats dinàmicament amb JavaScript -->
-  
-      </div>
-    </div>
-  </section>
-
-  <!-- Modal Recepta -->
-  <div id="modalReceta" class="fixed inset-0 bg-black bg-opacity-40 hidden flex items-center justify-center z-50">
-    <div class="bg-white max-w-md w-full p-6 rounded-lg shadow-lg relative">
-      <button id="cerrarModal" class="absolute top-3 right-3 text-red-800 text-xl">&times;</button>
-      <h3 id="recetaTitulo" class="text-red-800 text-xl font-semibold mb-3"></h3>
-      <div id="recetaContenido" class="space-y-4 text-sm"></div>
-    </div>
-  </div>
 
   <!-- Història -->
   <section id="nosotros" class="py-16 px-4">
@@ -110,6 +93,33 @@
       </div>
     </div>
   </section>
+  <!-- Productes -->
+  <section id="productos" class="bg-gray-50 py-16 px-4 transition-transform duration-300">
+
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-center text-2xl font-semibold mb-6">Els nostres productes</h2>
+
+      <!-- Filtres dinàmics -->
+      <div id="filtrosContainer" class="flex flex-wrap justify-center gap-3 mb-10"></div>
+
+      <!-- Mostrar productes -->
+      <div id="productoContainer" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- Productes carregats dinàmicament amb JavaScript -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Recepta -->
+  <div id="modalReceta" class="fixed inset-0 bg-black bg-opacity-40 hidden flex items-center justify-center z-50">
+    <div class="bg-white max-w-md w-full p-6 rounded-lg shadow-lg relative">
+      <button id="cerrarModal" class="absolute top-3 right-3 text-red-800 text-xl">&times;</button>
+      <h3 id="recetaTitulo" class="text-red-800 text-xl font-semibold mb-3"></h3>
+      <div id="recetaContenido" class="space-y-4 text-sm"></div>
+    </div>
+  </div>
+
 
   <!-- Contacte i ubicació -->
   <section id="contacto" class="py-16 bg-gray-100 px-4">
@@ -121,7 +131,8 @@
           <p class="mb-2"><strong>Adreça:</strong><br />Carrer Puigmartí, 5<br />Barri de Gràcia, 08012 Barcelona</p>
           <p class="mb-2"><strong>Telèfon:</strong><br />93 210 00 55</p>
           <p class="mb-2"><strong>Email:</strong><br />carnsdgp@gmail.com</p>
-          <p class="mb-2"><strong>Horari:</strong><br />Dilluns a Divendres: 9:00 - 14:00 i 17:00 - 20:30<br />Dissabtes:
+          <p class="mb-2"><strong>Horari:</strong><br />Dilluns a Divendres: 9:00 - 14:00 i 17:00 -
+            20:30<br />Dissabtes:
             9:00 - 14:00<br />Diumenges: Tancat</p>
         </div>
         <div class="md:w-1/2">
@@ -138,7 +149,10 @@
     <p>&copy; 2025 Carnisseria Gràcia. Tots els drets reservats.</p>
   </footer>
 
+  <!-- Carga productos -->
   <script src="script.js"></script>
+  <!-- Animaciones -->
+   <script src="animations.js"></script>
 </body>
 
 </html>

@@ -98,24 +98,6 @@
           "descripcio": "Extrem de la columna vertebral.",
           "receptes": "Carn gelatinosa, melosa i molt gustosa. Es destina a guisats melosos (com el típic cua de bou) i per a l'escudella o brous.",
           "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Coll",
-          "descripcio": "Part del coll.",
-          "receptes": "Carn melosa, gustosa, amb tendrums. S'utilitza per a brous, estofats de cocció lenta i carn picada.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Galta",
-          "descripcio": "Músculs de la cara de l'animal.",
-          "receptes": "Carn molt melosa i tendra. Ideal per a guisats, rostits i coccions llargues que resulten en carns que es desfan.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Pit",
-          "descripcio": "Part davantera del cos.",
-          "receptes": "Carn gustosa, grassa i tendinosa. S'usa per a guisats, brous, escudella o arrebossada si es talla molt fina.",
-          "imatge": "/img/default_img.jpg"
         }
       ]
     },
@@ -138,12 +120,6 @@
           "nom": "Cuixa",
           "descripcio": "Pota posterior i part més gran",
           "receptes": "Rostida al forn (sencera o trossejada). També per a rostits a la brasa o tallada en filets, escalopins o medallons (especialment la carn desossada).",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Braó",
-          "descripcio": "Part baixa de la cuixa o de l'espatlla (canell)",
-          "receptes": "Estofats o guisats de llarga cocció. També es poden fer a la brasa o al forn.",
           "imatge": "/img/default_img.jpg"
         },
         {
@@ -176,6 +152,12 @@
           "receptes": "Saltats, fregits (com el fetge) o utilitzats per a guisats o farcits.",
           "imatge": "/img/default_img.jpg"
         }
+      ]
+    },
+    {
+      "producte": "Porc",
+      "informacio":[
+        
       ]
     },
     {
@@ -266,7 +248,7 @@
           },
           {
               "nom": "Hamburguesa de taronja",
-              "descripcio": "Feta amb carn de vedella 100% natural amb taronja caramel·litzada i pinyons",
+              "descripcio": "Feta amb carn de vedella 100% natural amb taronja confitada i pinyons",
               "receptes": "Pa, enciam, tomàquet, ceba, hamburguesa, formatge, bacó i obtenim la nostra deliciosa hamburguesa natural",
               "imatge": "/img/default_img.jpg"
           },
@@ -307,7 +289,7 @@
           },
           {
               "nom": "Pinxos de sabors",
-              "descripcio": "Pinxos de carn de vedella a escollir entre sabor barbacoa, curry o teriyaki",
+              "descripcio": "Pinxos de carn de vedella a escollir entre sabor barbacoa o curry",
               "receptes": "Perfectes per a fer a la brasa o a la planxa, menjar ràpid i senzill",
               "imatge": "/img/default_img.jpg"
           }

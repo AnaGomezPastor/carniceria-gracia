@@ -50,20 +50,7 @@ function activarAnimacionProductos() {
 // Llamar la función inicialmente
 activarAnimacionProductos();
 
-
-// ====== SI CARGAS PRODUCTOS DINÁMICAMENTE ======
-// Llama a activarAnimacionProductos() justo después de insertarlos en el DOM
-// Ejemplo:
-// fetch('productos.json')
-//   .then(res => res.json())
-//   .then(data => {
-//     renderProductos(data);
-//     activarAnimacionProductos(); // <- aquí
-//   });
-
-
 // ====== HEADER FIJO ======
-// El header ya es fixed en el HTML, pero puedes añadir un efecto al hacer scroll
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {

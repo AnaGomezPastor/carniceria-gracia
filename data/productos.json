@@ -1,112 +1,6 @@
 {
   "productes": [
     {
-      "producte": "Xai",
-      "informacio": [
-        {
-          "nom": "Costelles / Costellam",
-          "descripcio": "Part alta del pit, al llarg de l'espinada",
-          "receptes": "A la brasa, a la planxa, rostides (costellam sencer) o fregides. Molt populars.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Espatlla",
-          "descripcio": "Pota davantera i paleta",
-          "receptes": "Rostida al forn o a la cassola (cuita lentament). També per a guisats o a la brasa.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Cuixa",
-          "descripcio": "Pota posterior i part més gran",
-          "receptes": "Rostida al forn (sencera o trossejada). També per a rostits a la brasa o tallada en filets, escalopins o medallons (especialment la carn desossada).",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Braó",
-          "descripcio": "Part baixa de la cuixa o de l'espatlla (canell)",
-          "receptes": "Estofats o guisats de llarga cocció. També es poden fer a la brasa o al forn.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Coll",
-          "descripcio": "Part del coll i espatlla superior",
-          "receptes": "Ideal per a guisats, estofats i calderetes (necessita cocció lenta i humida). També en talls per a brasa/planxa (collarets).",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Mitjanes (o Palpissos)",
-          "descripcio": "Tall de la cuixa amb os",
-          "receptes": "A la brasa o a la planxa.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Pit",
-          "descripcio": "Part inferior de la caixa toràcica",
-          "receptes": "En guisats (pit a trossos) o farcit i rostit al forn (pit obert i desossat). També per a fer xurrasco (tira de costella amb falda).",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Falda",
-          "descripcio": "Part inferior del ventre i el costat",
-          "receptes": "Carn amb més greix, ideal per a guisats, brous i caldos o per fer carn picada. També per a xurrasquitos (talls de la falda).",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Menuts",
-          "descripcio": "Òrgans interns (fetge, ronyons, etc.)",
-          "receptes": "Saltats, fregits (com el fetge) o utilitzats per a guisats o farcits.",
-          "imatge": "/img/default_img.jpg"
-        }
-      ]
-    },
-    {
-      "producte": "Pollastre",
-      "informacio": [
-        {
-          "nom": "Pit",
-          "descripcio": "Part frontal del tors",
-          "receptes": "La carn més magra. Ideal per a filets a la planxa, escalopes arrebossades, farcits, i per fer carn picada o broquetes.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Cuixa",
-          "descripcio": "Part superior de la pota",
-          "receptes": "Carn més fosca i gustosa. Excel·lent per a guisats i estofats, rostits (a la cassola o forn) i per a fer a la brasa.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Contracuixa",
-          "descripcio": "Part inferior de la pota (la més propera al peu)",
-          "receptes": "També carn fosca, molt melosa. S'utilitza de forma similar a la cuixa: en guisats, arrossos i a la brasa.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Quart darrer",
-          "descripcio": "La cuixa i la contracuixa juntes",
-          "receptes": "Tall típic per a pollastre rostit sencer al forn o a la cassola (pollastre a la catalana).",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Quart davanter",
-          "descripcio": "Pechuga, ala i part de l'esquena",
-          "receptes": "Usat sovint per fer el pollastre rostit (trossejat) o per fer caldos i brous.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Aletes",
-          "descripcio": "Les ales",
-          "receptes": "Fetes a la brasa, fregides (tipus wings) o en guisats / cassoles on aporten molt de sabor i gelatina.",
-          "imatge": "/img/default_img.jpg"
-        },
-        {
-          "nom": "Carcanada (o Esquelet)",
-          "descripcio": "L'esquelet del pollastre un cop se n'extreuen les parts principals",
-          "receptes": "Exclusivament per fer brous, caldos o fons de cocció (fúmet).",
-          "imatge": "/img/default_img.jpg"
-        }
-      ]
-    },
-    {
       "producte": "Vedella",
       "informacio": [
         {
@@ -226,6 +120,112 @@
       ]
     },
     {
+      "producte": "Xai",
+      "informacio": [
+        {
+          "nom": "Costelles / Costellam",
+          "descripcio": "Part alta del pit, al llarg de l'espinada",
+          "receptes": "A la brasa, a la planxa, rostides (costellam sencer) o fregides. Molt populars.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Espatlla",
+          "descripcio": "Pota davantera i paleta",
+          "receptes": "Rostida al forn o a la cassola (cuita lentament). També per a guisats o a la brasa.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Cuixa",
+          "descripcio": "Pota posterior i part més gran",
+          "receptes": "Rostida al forn (sencera o trossejada). També per a rostits a la brasa o tallada en filets, escalopins o medallons (especialment la carn desossada).",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Braó",
+          "descripcio": "Part baixa de la cuixa o de l'espatlla (canell)",
+          "receptes": "Estofats o guisats de llarga cocció. També es poden fer a la brasa o al forn.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Coll",
+          "descripcio": "Part del coll i espatlla superior",
+          "receptes": "Ideal per a guisats, estofats i calderetes (necessita cocció lenta i humida). També en talls per a brasa/planxa (collarets).",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Mitjanes (o Palpissos)",
+          "descripcio": "Tall de la cuixa amb os",
+          "receptes": "A la brasa o a la planxa.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Pit",
+          "descripcio": "Part inferior de la caixa toràcica",
+          "receptes": "En guisats (pit a trossos) o farcit i rostit al forn (pit obert i desossat). També per a fer xurrasco (tira de costella amb falda).",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Falda",
+          "descripcio": "Part inferior del ventre i el costat",
+          "receptes": "Carn amb més greix, ideal per a guisats, brous i caldos o per fer carn picada. També per a xurrasquitos (talls de la falda).",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Menuts",
+          "descripcio": "Òrgans interns (fetge, ronyons, etc.)",
+          "receptes": "Saltats, fregits (com el fetge) o utilitzats per a guisats o farcits.",
+          "imatge": "/img/default_img.jpg"
+        }
+      ]
+    },
+    {
+      "producte": "Pollastre",
+      "informacio": [
+        {
+          "nom": "Pit",
+          "descripcio": "Part frontal del tors",
+          "receptes": "La carn més magra. Ideal per a filets a la planxa, escalopes arrebossades, farcits, i per fer carn picada o broquetes.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Cuixa",
+          "descripcio": "Part superior de la pota",
+          "receptes": "Carn més fosca i gustosa. Excel·lent per a guisats i estofats, rostits (a la cassola o forn) i per a fer a la brasa.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Contracuixa",
+          "descripcio": "Part inferior de la pota (la més propera al peu)",
+          "receptes": "També carn fosca, molt melosa. S'utilitza de forma similar a la cuixa: en guisats, arrossos i a la brasa.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Quart darrer",
+          "descripcio": "La cuixa i la contracuixa juntes",
+          "receptes": "Tall típic per a pollastre rostit sencer al forn o a la cassola (pollastre a la catalana).",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Quart davanter",
+          "descripcio": "Pechuga, ala i part de l'esquena",
+          "receptes": "Usat sovint per fer el pollastre rostit (trossejat) o per fer caldos i brous.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Aletes",
+          "descripcio": "Les ales",
+          "receptes": "Fetes a la brasa, fregides (tipus wings) o en guisats / cassoles on aporten molt de sabor i gelatina.",
+          "imatge": "/img/default_img.jpg"
+        },
+        {
+          "nom": "Carcanada (o Esquelet)",
+          "descripcio": "L'esquelet del pollastre un cop se n'extreuen les parts principals",
+          "receptes": "Exclusivament per fer brous, caldos o fons de cocció (fúmet).",
+          "imatge": "/img/default_img.jpg"
+        }
+      ]
+    },
+    {
       "producte": "Hamburgueses",
       "informacio": [
           {
@@ -307,7 +307,7 @@
           },
           {
               "nom": "Pinxos de sabors",
-              "descripcio": "Pinxos de carn de vedella a escollir entre salsa barbacoa, curry o teriyaki",
+              "descripcio": "Pinxos de carn de vedella a escollir entre sabor barbacoa, curry o teriyaki",
               "receptes": "Perfectes per a fer a la brasa o a la planxa, menjar ràpid i senzill",
               "imatge": "/img/default_img.jpg"
           }

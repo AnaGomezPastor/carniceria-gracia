@@ -31,13 +31,13 @@
           "nom": "Babilla / Cap de Mort",
           "descripcio": "Part davantera de la cuixa, prop del genoll.",
           "receptes": "Carn magra i tendra (la part superior). S'utilitza per a filets, planxa, fregir i guisats (la part més dura).",
-          "imatge": "/img/default_img.jpg"
+          "imatge": "/img/cap_de_mort.jpg"
         },
         {
           "nom": "Culata / Cadera",
           "descripcio": "Part alta i externa de la cuixa posterior.",
           "receptes": "Carn sucosa, magra, poc greixosa. Ideal per a filets a la planxa o fregits, rostit o fondues.",
-          "imatge": "/img/default_img.jpg"
+          "imatge": "/img/culata.jpg"
         },
         {
           "nom": "Tall Rodó",
@@ -67,7 +67,7 @@
           "nom": "Jarret",
           "descripcio": "Part baixa de les potes (bessó de l'animal).",
           "receptes": "Carn magra, gelatinosa, amb molta fibra i col·lagen. Perfecta per a guisats (per la seva gelatina), brous, escudella i tallada amb os és l'ossobuco.",
-          "imatge": "/img/default_img.jpg"
+          "imatge": "/img/jarrete.jpg"
         },
         {
           "nom": "Filet de Pobre",
